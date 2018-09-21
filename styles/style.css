@@ -27,10 +27,9 @@ header, div {
 }
 
 textarea {
-    min-width: 250px;
-    min-height: 60px;
-    max-width: 500px;
-    max-height: 120px
+    resize: none;
+    width: 92%;
+    height: 60px;
 }
 
 legend {
@@ -41,7 +40,7 @@ legend {
 
 fieldset {
     margin-bottom: 15px;
-    box-shadow: 3px 3px 4px 0 black;    
+    box-shadow: 3px 3px 4px 0 black;
 }
 
 fieldset input, select, textarea {
