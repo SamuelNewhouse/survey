@@ -1,5 +1,5 @@
-# ???
+# Build a Survey Form
 
-This is my submission for the "Build a ???" project on www.freecodecamp.com.
+This is my submission for the "Build a Survey Form" project on www.freecodecamp.com.
 
-View here: https://samuelnewhouse.github.io/simon-game/
+View here: https://samuelnewhouse.github.io/survey
