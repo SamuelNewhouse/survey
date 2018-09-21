@@ -14,12 +14,76 @@
 
 <body>
 	<header>
+		<h1 id="title">Survey Survey</h1>
 	</header>
 
-	<nav>
-	</nav>
-
 	<section>
+		<p id="description">This is your chance to fill out a survey about surveys!</p>
+
+		<form id="survey-form">
+			<fieldset>
+				<legend>Your Info</legend>
+
+				<div>
+					<label for="name" id="name-label">Name:</label>
+					<input type="text" name="name" id="name" placeholder="Your name.">
+				</div>
+
+				<div>
+					<label for="email" id="email-label">Email:</label>
+					<input type="email" name="email" id="email" placeholder="Your email.">
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<legend>Questions</legend>
+				<div>
+					<label for="number" id="number-label">Approximately how many surveys have you participated in?</label>
+					<input type="number" name="number" id="number" min="0" max="999" placeholder="0">
+				</div>
+
+				<div>
+					<label for="dropdown">How would you rate this survey compared to others?</label>
+					<select name="dropdown" id="dropdown">
+						<option disabled selected value>...</option>
+						<option value="muchworse">Much worse</option>
+						<option value="slightlyworse">Slightly worse</option>
+						<option value="aboutthesame">About the same</option>
+						<option value="slightlybetter">Slightly better</option>
+						<option value="muchbetter">Much better</option>
+						<option value="unknown">I don't know / This is my first one.</option>
+					</select>
+				</div>
+
+				<div>
+					<p>Which of the following types of surveys have you participated in?</p>
+					<input type="checkbox" name="check-phone" value="phone" id="check-phone">
+					<label for="check-phone">Phone</label>
+					<input type="checkbox" name="check-email" value="email" id="check-email">
+					<label for="check-phone">Email</label>
+					<input type="checkbox" name="check-website" value="website" id="check-phone">
+					<label for="check-phone">Website</label>
+					<input type="checkbox" name="check-phone" value="inperson" id="check-inperson">
+					<label for="check-phone">In Person</label>
+				</div>
+
+				<div>
+					<p>What is your most preferred method for taking a survey?</p>
+					<input type="radio" name="surveypreference" id="method-phone">
+					<label for="method-phone">Phone</label>
+					<input type="radio" name="surveypreference" id="method-email">
+					<label for="method-email">Email</label>
+					<input type="radio" name="surveypreference" id="method-website">
+					<label for="method-website">Website</label>
+					<input type="radio" name="surveypreference" id="method-papermail">
+					<label for="method-papermail">Paper / Mail</label>
+					<input type="radio" name="surveypreference" id="method-noneother">
+					<label for="method-noneother">None / Other</label>
+				</div>
+
+				<div></div>
+			</fieldset>
+		</form>
 	</section>
 
 	<footer>Made by
