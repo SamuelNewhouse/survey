@@ -1,19 +1,29 @@
 html {
     box-sizing: border-box;
+    padding: 15px 4%;
 }
 *, *:before, *:after {
     box-sizing: inherit;
 }
 
 body {
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 1.1rem;    
-    max-width: 600px;    
     margin: auto;
+    max-width: 600px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.1rem;
 }
 
-div {
-    margin-bottom: 12px;    
+h1, p {
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+
+h1, legend {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header, div {
+    margin-bottom: 12px;
 }
 
 textarea {
@@ -29,10 +39,29 @@ legend {
     font-weight: 700;
 }
 
+fieldset {
+    margin-bottom: 15px;
+    box-shadow: 3px 3px 4px 0 black;    
+}
+
 fieldset input, select, textarea {
     margin-left: 4%;
 }
 
-header, #description, footer, fieldset {    
+header, footer, fieldset {
     padding-left: 4%;
+}
+
+input[type="submit"] {
+    font-size: 1.1em;
+}
+
+#your-info {
+    background: linear-gradient(#ffeded, #d3c3c3);
+}
+#questions {
+    background: linear-gradient(#e7e9ff, #cbcbe0);
+}
+#comment {
+    background: linear-gradient(#e7ffe7, #cbe0ce);
 }

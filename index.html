@@ -15,13 +15,12 @@
 <body>
 	<header>
 		<h1 id="title">Survey Survey</h1>
+		<p id="description">This is your chance to fill out a survey about surveys!</p>
 	</header>
 
 	<section>
-		<p id="description">This is your chance to fill out a survey about surveys!</p>
-
 		<form id="survey-form">
-			<fieldset>
+			<fieldset id="your-info">
 				<legend>Your Info</legend>
 
 				<div>
@@ -37,7 +36,7 @@
 				</div>
 			</fieldset>
 
-			<fieldset>
+			<fieldset id="questions">
 				<legend>Questions</legend>
 				<div>
 					<label for="number" id="number-label">Approximately how many surveys have you participated in?</label>
@@ -103,7 +102,7 @@
 					</select>
 				</div>
 			</fieldset>
-			<fieldset>
+			<fieldset id="comment">
 				<legend>Comment and Submit</legend>
 				<div>
 					<textarea placeholder="Type any comments here."></textarea>
