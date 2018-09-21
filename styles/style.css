@@ -22,7 +22,11 @@ h1, legend {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-header, div {
+header {
+    margin-bottom: 24px;
+}
+
+div {
     margin-bottom: 12px;
 }
 
