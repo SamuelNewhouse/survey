@@ -1,4 +1,38 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.1rem;    
+    max-width: 600px;    
+    margin: auto;
+}
+
+div {
+    margin-bottom: 12px;    
+}
+
 textarea {
-    min-width: 200px;
-    min-height: 50px;
+    min-width: 250px;
+    min-height: 60px;
+    max-width: 500px;
+    max-height: 120px
+}
+
+legend {
+    padding: 0;
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+fieldset input, select, textarea {
+    margin-left: 4%;
+}
+
+header, #description, footer, fieldset {    
+    padding-left: 4%;
 }

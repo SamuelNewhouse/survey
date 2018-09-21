@@ -26,11 +26,13 @@
 
 				<div>
 					<label for="name" id="name-label">Name:</label>
+					<br>
 					<input type="text" name="name" id="name" placeholder="Your name." required>
 				</div>
 
 				<div>
 					<label for="email" id="email-label">Email:</label>
+					<br>
 					<input type="email" name="email" id="email" placeholder="Your email." required>
 				</div>
 			</fieldset>
@@ -39,43 +41,57 @@
 				<legend>Questions</legend>
 				<div>
 					<label for="number" id="number-label">Approximately how many surveys have you participated in?</label>
+					<br>
 					<input type="number" name="number" id="number" min="0" max="999" placeholder="0">
 				</div>
 
 				<div>
-					<p>Which of the following types of surveys have you participated in?</p>
+					Which of the following types of surveys have you participated in?
+					<br>
 					<input type="checkbox" name="check-phone" value="phone" id="check-phone">
 					<label for="check-phone">Phone</label>
+					<br>
 					<input type="checkbox" name="check-email" value="email" id="check-email">
 					<label for="check-email">Email</label>
+					<br>
 					<input type="checkbox" name="check-website" value="website" id="check-website">
 					<label for="check-website">Website</label>
+					<br>
 					<input type="checkbox" name="check-paper-mail" value="paper-mail" id="paper-mail">
 					<label for="check-paper-mail">Paper / Mail</label>					
+					<br>
 					<input type="checkbox" name="check-in-person" value="in-person" id="check-in-person">
 					<label for="check-in-person">In Person</label>
+					<br>
 					<input type="checkbox" name="check-none-other" value="none-other" id="check-none-other">
 					<label for="check-none-other">None / Other</label>
 				</div>
 
 				<div>
-					<p>What is your most preferred method for taking a survey?</p>
+					What is your most preferred method for taking a survey?
+					<br>
 					<input type="radio" name="surveypreference" value="phone" id="pref-phone">
 					<label for="pref-phone">Phone</label>
+					<br>
 					<input type="radio" name="surveypreference" value="email" id="pref-email">
 					<label for="pref-email">Email</label>
+					<br>
 					<input type="radio" name="surveypreference" value="website" id="pref-website">
 					<label for="pref-website">Website</label>
+					<br>
 					<input type="radio" name="surveypreference" value="paper-mail" id="pref-paper-mail">
 					<label for="pref-papermail">Paper / Mail</label>
+					<br>
 					<input type="radio" name="surveypreference" value="in-person" id="pref-in-person">
 					<label for="pref-email">In Person</label>
+					<br>
 					<input type="radio" name="surveypreference" value="none-other" id="pref-none-other">
 					<label for="pref-noneother">None / Other</label>
 				</div>
 
 				<div>
 					<label for="dropdown">How would you rate this survey compared to others?</label>
+					<br>
 					<select name="dropdown" id="dropdown">
 						<option disabled selected value>...</option>
 						<option value="muchworse">Much worse</option>
@@ -93,7 +109,7 @@
 					<textarea placeholder="Type any comments here."></textarea>
 				</div>
 				<div>
-					<input type="submit" value="submit" id="submit">
+					<input type="submit" value="Submit" id="submit">
 				</div>
 			</fieldset>			
 		</form>
