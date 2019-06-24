@@ -32,6 +32,10 @@ header, footer, fieldset {
     padding: 0 4%;
 }
 
+footer {
+  margin-bottom: 5px;
+}
+
 fieldset {
   margin: 30px auto;
   border: 1px solid #ccc;
