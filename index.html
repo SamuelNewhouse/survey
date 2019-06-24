@@ -1,122 +1,132 @@
-<!-- Doctype HTML5 -->
 <!doctype html>
-<html lang="en" dir="ltr">
+<html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="description" content="This is my submission for the 'Build a Survey Page' project on www.freecodecamp.com.">
-	<meta name="author" content="Samuel Newhouse">
-	<title>Survey Survey</title>
-	<link rel="stylesheet" href="styles/style.css" type="text/css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description"
+    content="This is my submission for the 'Build a Survey Page' project on www.freecodecamp.com.">
+  <meta name="author" content="Samuel Newhouse">
+  <title>Survey Survey</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/style.css" type="text/css">
 </head>
 
 <body>
-	<header>
-		<h1>Survey Survey</h1>
-		<p>This is your chance to fill out a survey about surveys!</p>
-	</header>
+  <header>
+    <h1>Survey Survey</h1>
+    <p>This is your chance to fill out a survey about surveys!</p>
+  </header>
 
-	<section>
-		<form>
-			<fieldset id="your-info">
-				<legend>Your Info</legend>
+  <section>
+    <form>
+      <fieldset id="your-info">
+        <legend>Your Info</legend>
+        <div class="form-group">
+          <label for="name" id="name-label">Name:</label>
+          <input class="form-control" type="text" name="name" id="name" placeholder="Your name." required>
+        </div>
+        <div class="form-group">
+          <label for="email" id="email-label">Email:</label>
+          <input class="form-control" type="email" name="email" id="email" placeholder="Your email." required>
+        </div>
+      </fieldset>
 
-				<div>
-					<label for="name" id="name-label">Name:</label>
-					<br>
-					<input type="text" name="name" id="name" placeholder="Your name." required>
-				</div>
+      <fieldset id="questions">
+        <legend>Questions</legend>
+        <div class="form-group">
+          <label for="number" id="number-label">Approximately how many surveys have you participated in?</label>
+          <input class="form-control" type="number" name="number" id="number" min="0" max="9999" placeholder="0">
+        </div>
 
-				<div>
-					<label for="email" id="email-label">Email:</label>
-					<br>
-					<input type="email" name="email" id="email" placeholder="Your email." required>
-				</div>
-			</fieldset>
+        <div class="form-group">
+          Which of the following types of surveys have you participated in?
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="check-phone" value="phone" id="check-phone">
+            <label class="form-check-label" for="check-phone">Phone</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="check-email" value="email" id="check-email">
+            <label class="form-check-label" for="check-email">Email</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="check-website" value="website" id="check-website">
+            <label class="form-check-label" for="check-website">Website</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="check-in-person" value="in-person"
+              id="check-in-person">
+            <label class="form-check-label" for="check-in-person">In Person</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="check-paper-mail" value="paper-mail" id="paper-mail">
+            <label class="form-check-label" for="check-paper-mail">Paper / Mail</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="check-none-other" value="none-other"
+              id="check-none-other">
+            <label class="form-check-label" for="check-none-other">None / Other</label>
+          </div>
+        </div>
 
-			<fieldset id="questions">
-				<legend>Questions</legend>
-				<div>
-					<label for="number" id="number-label">Approximately how many surveys have you participated in?</label>
-					<br>
-					<input type="number" name="number" id="number" min="0" max="9999" placeholder="0">
-				</div>
 
-				<div>
-					Which of the following types of surveys have you participated in?
-					<br>
-					<input type="checkbox" name="check-phone" value="phone" id="check-phone">
-					<label for="check-phone">Phone</label>
-					<br>
-					<input type="checkbox" name="check-email" value="email" id="check-email">
-					<label for="check-email">Email</label>
-					<br>
-					<input type="checkbox" name="check-website" value="website" id="check-website">
-					<label for="check-website">Website</label>
-					<br>
-					<input type="checkbox" name="check-in-person" value="in-person" id="check-in-person">
-					<label for="check-in-person">In Person</label>
-					<br>
-					<input type="checkbox" name="check-paper-mail" value="paper-mail" id="paper-mail">
-					<label for="check-paper-mail">Paper / Mail</label>
-					<br>
-					<input type="checkbox" name="check-none-other" value="none-other" id="check-none-other">
-					<label for="check-none-other">None / Other</label>
-				</div>
+        <div class="form-group">
+          What is your most preferred method for taking a survey?
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="surveypreference" value="phone" id="pref-phone" required>
+            <label class="form-check-label" for="pref-phone">Phone</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="surveypreference" value="email" id="pref-email">
+            <label class="form-check-label" for="pref-email">Email</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="surveypreference" value="website" id="pref-website">
+            <label class="form-check-label" for="pref-website">Website</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="surveypreference" value="in-person" id="pref-in-person">
+            <label class="form-check-label" for="pref-email">In Person</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="surveypreference" value="paper-mail"
+              id="pref-paper-mail">
+            <label class="form-check-label" for="pref-papermail">Paper / Mail</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="surveypreference" value="none-other"
+              id="pref-none-other">
+            <label class="form-check-label" for="pref-noneother">None / Other</label>
+          </div>
+        </div>
 
-				<div>
-					What is your most preferred method for taking a survey?
-					<br>
-					<input type="radio" name="surveypreference" value="phone" id="pref-phone">
-					<label for="pref-phone">Phone</label>
-					<br>
-					<input type="radio" name="surveypreference" value="email" id="pref-email">
-					<label for="pref-email">Email</label>
-					<br>
-					<input type="radio" name="surveypreference" value="website" id="pref-website">
-					<label for="pref-website">Website</label>
-					<br>
-					<input type="radio" name="surveypreference" value="in-person" id="pref-in-person">
-					<label for="pref-email">In Person</label>
-					<br>
-					<input type="radio" name="surveypreference" value="paper-mail" id="pref-paper-mail">
-					<label for="pref-papermail">Paper / Mail</label>
-					<br>
-					<input type="radio" name="surveypreference" value="none-other" id="pref-none-other">
-					<label for="pref-noneother">None / Other</label>
-				</div>
+        <div class="form-group">
+          <label for="dropdown">How would you rate this survey compared to others?</label>
+          <select class="custom-select" name="dropdown" id="dropdown" required>
+            <option disabled selected value>...</option>
+            <option value="muchbetter">Much better</option>
+            <option value="slightlybetter">Slightly better</option>
+            <option value="aboutthesame">About the same</option>
+            <option value="slightlyworse">Slightly worse</option>
+            <option value="muchworse">Much worse</option>
+            <option value="unknown">I don't know / This is my first one.</option>
+          </select>
+        </div>
+      </fieldset>
+      <fieldset id="comment">
+        <legend>Comment and Submit</legend>
+        <div class="form-group">
+          <textarea placeholder="Type any comments here."></textarea>
+          <input class="btn btn-secondary" type="submit" value="Submit" id="submit">
+        </div>
+      </fieldset>
+    </form>
+  </section>
 
-				<div>
-					<label for="dropdown">How would you rate this survey compared to others?</label>
-					<br>
-					<select name="dropdown" id="dropdown">
-						<option disabled selected value>...</option>
-						<option value="muchbetter">Much better</option>
-						<option value="slightlybetter">Slightly better</option>
-						<option value="aboutthesame">About the same</option>
-						<option value="slightlyworse">Slightly worse</option>
-						<option value="muchworse">Much worse</option>
-						<option value="unknown">I don't know / This is my first one.</option>
-					</select>
-				</div>
-			</fieldset>
-			<fieldset id="comment">
-				<legend>Comment and Submit</legend>
-				<div>
-					<textarea placeholder="Type any comments here."></textarea>
-				</div>
-				<div>
-					<input type="submit" value="Submit" id="submit">
-				</div>
-			</fieldset>
-		</form>
-	</section>
-
-	<footer>Made by
-		<a href="https://github.com/SamuelNewhouse" target="_blank">Samuel Newhouse</a>
-	</footer>
+  <footer>Made by
+    <a href="https://github.com/SamuelNewhouse" target="_blank">Samuel Newhouse</a>
+  </footer>
 </body>
 
 </html>
